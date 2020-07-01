@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+h3{
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 0;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #707070;
+}
+a{
+    background-image: linear-gradient(45deg, #ec4f90, #ec4c76);
+    padding: 0.6em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 1em;
+    display: inline-block;
+}
+.hero-sec{
+    background-image: url("images/header-bg.png");
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 8em 8em;
+}
+.hero-sec h2{
+    color: #ec4c7a;
+}
+.inner-col{
+   width: 47%;
+   display: inline-block;
+   vertical-align: middle; 
+}
+.inner-col:nth-child(1){
+    margin-right: 5.5%;
+}
+.inner-col img{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.biography-sec{
+    background-image: url("images/biography-bg.png");
+    background-size: 100% auto;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 2em 8em;
+}
+.biography-sec a{
+    text-transform: unset;
+}
+.work-sec{
+    background-image: url("images/latest-work-bg.png");
+    background-size: 100% auto;
+    background-position: right -35px;
+    background-repeat: no-repeat;
+    padding: 5em 8em;
+}
+.work-sec h3{
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+.work-sec .portfolio-block{
+    width: 32%;
+    display: inline-block;
+    vertical-align: top; 
+}
+.portfolio-block img{
+    width: 100%;
+}
+div.portfolio-block:nth-child(3){
+    margin: 0 1.5%;
+}
+.client-sec{
+    background-image: url("images/footer-bg.png");
+    background-size: 100% auto;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 4em 20em;
+}
+.client-sec h3, .client-sec h4, .client-sec h6, .client-sec p{
+    text-align: center;
+}
+.client-sec h3{
+    padding-bottom: 1em;
+}
+.client-sec h4{
+    margin-bottom: 0;
+}
+.client-sec h6{
+    margin-top: 10px;
+}
+.client-sec h6{
+    color: #707070;
+}
+.client-sec p{
+    max-width: 70%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+.cta{
+    background-image: linear-gradient(45deg, #ec4f90, #ec4c76);
+    padding: 1.5em 2em;
+    border-radius: 10px;
+}
+.cta h6{
+    margin: 0;
+    color: #fff;
+}
+.cta a{
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-transform: unset;
+    margin-top: 10px;
+    padding-bottom: 0;
+}
+.footer{
+    padding: 2em 8em;
+}
+.footer .copyright{
+    color: #707070;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media all and (max-width:767px){
+    .inner-col{
+        width: 100%;
+    }
+    .hero-sec, .client-sec, .biography-sec, .work-sec, .footer{
+        padding: 2em 2em;
+    }
+    .hero-sec img{
+        margin-top: 2em;
+    }
+    .work-sec .portfolio-block {
+        width: 100%;
+        display: block;
+        padding: 1em 0;
+    }
+    .biography-sec, .hero-sec, .work-sec{
+        background-size: cover;
+    }
+    .cta{
+        padding: 1em;
+    }
+    .cta a{
+        font-size: 1em;
+    }
+}
